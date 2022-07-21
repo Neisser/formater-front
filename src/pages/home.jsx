@@ -16,7 +16,7 @@ function Home() {
   }
 
   const getTableData = async () => {
-    const {data} = await getFileData();
+    const data = await getFileData();
     const table = processData(data);
     setFileData(table)
   }
